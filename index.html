@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$PUMPFONE — 500mg. Take one. Check chart. Repeat.</title>
+<meta name="description" content="PUMPFONE 500mg — the only capsule clinically proven to make you check the chart more. Side effects include gains, cope and permanent screen time.">
+<meta property="og:title" content="$PUMPFONE — 500mg capsule">
+<meta property="og:description" content="Take one. Check chart. Repeat. Do not exceed 9999 doses per day.">
+<meta property="og:image" content="assets/mascot-pumpfone.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="assets/mascot-pumpfone.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='18' y='8' width='64' height='84' rx='32' fill='%2319d3a2'/><path d='M18 50V40a32 32 0 0 1 64 0v10z' fill='%23fff'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ BOOT / CLICK TO ENTER ============ -->
+<div id="boot" class="boot">
+  <div class="boot-inner">
+    <div class="boot-bottle" id="bootBottle">
+      <div class="bottle-cap"></div>
+      <div class="bottle-body">
+        <div class="bottle-label">
+          <span class="bl-top">Rx ONLY (not really)</span>
+          <span class="bl-name">PUMPFONE</span>
+          <span class="bl-dose">500 mg &middot; 1,000,000,000 caps</span>
+        </div>
+      </div>
+    </div>
+    <p class="boot-warn">SHAKE WELL BEFORE USE</p>
+    <button class="boot-btn" id="bootBtn">TAKE 1 CAPSULE</button>
+    <p class="boot-fine">by swallowing you agree that you will check the chart in 4 seconds</p>
+  </div>
+</div>
+
+<canvas id="pillfield" aria-hidden="true"></canvas>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <a href="#top" class="brand">
+    <span class="brand-pill"></span>
+    <span class="brand-text">PUMPFONE</span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#leaflet">LEAFLET</a>
+    <a href="#ingredients">INGREDIENTS</a>
+    <a href="#blister">BLISTER</a>
+    <a href="#vitals">VITALS</a>
+    <a href="#dosage">HOW TO TAKE</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <div class="nav-right">
+    <button class="icon-btn" id="soundBtn" title="Sound" aria-label="Toggle sound">🔇</button>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-copy">
+    <div class="rx-strip">Rx&nbsp;&nbsp;PUMPFONE&nbsp;500mg&nbsp;&nbsp;·&nbsp;&nbsp;ORAL CAPSULE&nbsp;&nbsp;·&nbsp;&nbsp;DO NOT SELL</div>
+    <h1 class="hero-h1"><span class="w1">TAKE</span><span class="w2">ONE.</span><span class="w3">CHECK</span><span class="w4">CHART.</span></h1>
+    <p class="hero-sub">The world's first capsule that treats absolutely nothing and makes your screen&nbsp;time worse. <b>$PUMPFONE</b> was prescribed to a guy in 2021. He never put the phone down. He is the coin.</p>
+
+    <div class="ca-row">
+      <span class="ca-label">CA</span>
+      <code id="caText" class="ca-text">NOT MINTED YET</code>
+      <button class="ca-copy" id="caCopy">COPY</button>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn btn-buy" id="btnBuy" href="#" >BUY $PUMPFONE</a>
+      <a class="btn btn-chart" id="btnChart" href="#">CHART</a>
+      <a class="btn btn-x" id="btnX" href="#">X</a>
+      <a class="btn btn-tg" id="btnTg" href="#">TELEGRAM</a>
+    </div>
+    <p class="cta-fine">0% tax · LP burned · contract renounced · 1,000,000,000 capsules</p>
+  </div>
+
+  <div class="hero-art">
+    <div class="glow-ring"></div>
+    <div class="hero-bubble" id="heroBubble">gm. still up 0%</div>
+    <img src="assets/mascot-pumpfone.png" alt="PUMPFONE capsule mascot sitting and scrolling on a phone" class="mascot" id="mascot">
+    <div class="hero-badge">SIDE EFFECT:<br><b>GAINS</b></div>
+    <div class="hero-shadow"></div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE STRIP ============ -->
+<div class="strip strip-pink" aria-hidden="true"><div class="strip-track" id="stripTrack1"></div></div>
+
+<!-- ============ LEAFLET ============ -->
+<section id="leaflet" class="section">
+  <h2 class="sec-h">PATIENT<br>INFORMATION<br>LEAFLET</h2>
+  <div class="leaflet-grid">
+    <article class="paper">
+      <h3>1. What PUMPFONE is</h3>
+      <p>PUMPFONE is a hard capsule, half white / half mint, containing one (1) very online individual. It belongs to a group of medicines called <i>"things that should not have been made"</i>.</p>
+      <p>It is used to treat: nothing. It is used to <b>cause</b>: refreshing the chart, telling your friends "it's still early", and sitting on the floor at 4am with 3% battery.</p>
+    </article>
+    <article class="paper">
+      <h3>2. Before you take PUMPFONE</h3>
+      <p>Do not take PUMPFONE if you:</p>
+      <ul>
+        <li>have a healthy relationship with your phone</li>
+        <li>go outside voluntarily</li>
+        <li>have ever said "I'll check it tomorrow" and meant it</li>
+        <li>are allergic to green candles, red candles, or candles</li>
+      </ul>
+      <p>Tell your doctor you're fine. You're fine.</p>
+    </article>
+    <article class="paper">
+      <h3>3. How PUMPFONE works</h3>
+      <p>The active molecule binds directly to the thumb. Within 4 minutes the patient opens an app. Within 6 minutes the patient opens the same app again to make sure it still exists.</p>
+      <p class="paper-note">Clinical note: in a study of 1 patient, 100% of patients became the capsule.</p>
+    </article>
+    <article class="paper paper-alert">
+      <h3>4. Overdose</h3>
+      <p>In case of overdose, the patient may begin explaining tokenomics to a family member at a birthday party.</p>
+      <p>There is no antidote. There is only the chart.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ INGREDIENTS ============ -->
+<section id="ingredients" class="section sec-mint">
+  <h2 class="sec-h">ACTIVE<br>INGREDIENTS</h2>
+  <p class="sec-lead">Each 500mg capsule contains:</p>
+  <div class="ing-list" id="ingList"></div>
+  <p class="sec-fine">Excipients: 0.0001mg of due diligence, colours, and whatever was on the floor.</p>
+</section>
+
+<!-- ============ BLISTER ============ -->
+<section id="blister" class="section">
+  <h2 class="sec-h">THE<br>BLISTER</h2>
+  <p class="sec-lead">One pack. Twelve doses. Pop them all to unlock the last one.<br><span class="sec-lead-sm">(each capsule contains one entry from the patient's dose diary)</span></p>
+
+  <div class="blister-wrap">
+    <div class="blister" id="blisterPack" role="group" aria-label="Blister pack"></div>
+    <div class="blister-side">
+      <div class="dose-counter"><span id="poppedCount">0</span><small>/ 12 POPPED</small></div>
+      <div class="dose-log" id="doseLog">
+        <span class="dose-log-empty">↑ pop a capsule</span>
+      </div>
+      <button class="mini-btn" id="refillBtn">REFILL PACK</button>
+    </div>
+  </div>
+</section>
+
+<div class="strip strip-yellow" aria-hidden="true"><div class="strip-track" id="stripTrack2"></div></div>
+
+<!-- ============ SIDE EFFECTS ============ -->
+<section id="effects" class="section">
+  <h2 class="sec-h">SIDE<br>EFFECTS</h2>
+  <p class="sec-lead">Very common (may affect more than 1 in 1 people):</p>
+  <div class="fx-grid">
+    <div class="fx"><span class="fx-emo">📈</span><b>Chartjaw</b><p>Involuntary jaw movement while a candle is forming.</p></div>
+    <div class="fx"><span class="fx-emo">🔋</span><b>Battery anxiety</b><p>Phone at 4%. You are 200 metres from a charger. You choose the chart.</p></div>
+    <div class="fx"><span class="fx-emo">👀</span><b>Blink deficiency</b><p>Measured blink rate: 0 per hour. Doctors are calling it "focus".</p></div>
+    <div class="fx"><span class="fx-emo">🗣️</span><b>Tokenomics Tourette's</b><p>You said "supply" out loud during a wedding speech.</p></div>
+    <div class="fx"><span class="fx-emo">🌙</span><b>Reverse sleep</b><p>You now sleep in 20-minute sessions between candle closes.</p></div>
+    <div class="fx"><span class="fx-emo">💊</span><b>Becoming the capsule</b><p>Rare, irreversible, honestly kind of an upgrade.</p></div>
+  </div>
+</section>
+
+<!-- ============ VITALS ============ -->
+<section id="vitals" class="section sec-dark">
+  <h2 class="sec-h sec-h-light">PATIENT<br>VITALS</h2>
+  <p class="sec-lead sec-lead-light">Live readout from the monitor taped to the capsule.</p>
+  <div class="vitals-grid">
+    <div class="vital"><span class="v-lab">PRICE</span><span class="v-val" id="vPrice">—</span></div>
+    <div class="vital"><span class="v-lab">MARKET CAP</span><span class="v-val" id="vMcap">—</span></div>
+    <div class="vital"><span class="v-lab">LIQUIDITY</span><span class="v-val" id="vLiq">—</span></div>
+    <div class="vital"><span class="v-lab">24H VOLUME</span><span class="v-val" id="vVol">—</span></div>
+    <div class="vital vital-joke"><span class="v-lab">SCREEN TIME TODAY</span><span class="v-val" id="vScreen">00:00:00</span></div>
+    <div class="vital vital-joke"><span class="v-lab">CHART CHECKED</span><span class="v-val" id="vChecks">0×</span></div>
+    <div class="vital vital-joke"><span class="v-lab">BLINKS / HOUR</span><span class="v-val">0</span></div>
+    <div class="vital vital-joke"><span class="v-lab">DOCTORS CONSULTED</span><span class="v-val">none</span></div>
+  </div>
+  <p class="sec-fine sec-fine-light">Price data pulled live from the public DexScreener API once a contract address is set. Joke stats are jokes. Everything here can go to zero.</p>
+</section>
+
+<!-- ============ DOSAGE / HOW TO BUY ============ -->
+<section id="dosage" class="section">
+  <h2 class="sec-h">DIRECTIONS<br>FOR USE</h2>
+  <ol class="dose-steps">
+    <li><span class="ds-n">1</span><div><b>Get a wallet</b><p>Phantom, or whatever wallet your chart app already lives next to. Write the seed phrase on paper. Never type it anywhere — not even for a very polite website.</p></div></li>
+    <li><span class="ds-n">2</span><div><b>Load it with SOL</b><p>An amount you'd be genuinely fine setting on fire. This is a capsule with legs, not a pension.</p></div></li>
+    <li><span class="ds-n">3</span><div><b>Swap for $PUMPFONE</b><p>Paste the contract address from the top of this page. Check it character by character, like a pharmacist. Fakes exist.</p></div></li>
+    <li><span class="ds-n">4</span><div><b>Take one dose per candle</b><p>Then check the chart. Then check it again. Then send this site to someone who has never touched grass.</p></div></li>
+  </ol>
+
+  <div class="warn-label">
+    <h3>WARNING LABEL / TOKENOMICS</h3>
+    <ul>
+      <li><b>Supply</b> — 1,000,000,000 capsules. No secret second bottle.</li>
+      <li><b>Tax</b> — 0% / 0%. The pharmacy is not charging you.</li>
+      <li><b>LP</b> — burned. Ashes, not a lockup.</li>
+      <li><b>Contract</b> — renounced. Nobody can change the prescription.</li>
+      <li><b>Utility</b> — none. It's a capsule. It sits. It scrolls.</li>
+      <li><b>Roadmap</b> — 1) sit 2) scroll 3) sit 4) scroll</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="section sec-mint">
+  <h2 class="sec-h">FAQ</h2>
+  <div class="faq-list">
+    <details><summary>Is this a real medicine?</summary><p>No. It is a picture of a capsule holding a phone. Do not swallow the website.</p></details>
+    <details><summary>Is $PUMPFONE affiliated with any pharmaceutical company?</summary><p>No. No affiliation, endorsement or partnership with any pharmaceutical company, pharmacy, health authority, or anyone who owns a lab coat. It's a meme coin about screen time.</p></details>
+    <details><summary>Why is the capsule always on the phone?</summary><p>He took himself. Nobody warned him about the side effects, because he was the side effect.</p></details>
+    <details><summary>What's the utility?</summary><p>There is none, and we're not going to invent one on slide 14. The utility is that you look at it and go "lol" and then you check the chart. That's the whole loop.</p></details>
+    <details><summary>Will it go up?</summary><p>Nobody knows, and anyone who tells you otherwise is lying to you. This is not investment advice and there are no guarantees of anything, ever.</p></details>
+    <details><summary>The buttons don't work.</summary><p>The token isn't live yet. Buy / chart / socials turn on the moment the contract exists — the site is already wired to them.</p></details>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="foot-top">
+    <div class="foot-brand">
+      <span class="brand-pill"></span>
+      <span>PUMPFONE</span>
+      <span class="foot-dose">500mg</span>
+    </div>
+    <div class="foot-ca">
+      <code id="caTextFoot">NOT MINTED YET</code>
+      <button class="ca-copy" id="caCopyFoot">COPY</button>
+    </div>
+    <div class="foot-links">
+      <a href="#" id="btnXFoot">X</a>
+      <a href="#" id="btnTgFoot">TELEGRAM</a>
+      <a href="#" id="btnChartFoot">CHART</a>
+    </div>
+  </div>
+  <p class="disclaimer">
+    $PUMPFONE is a meme coin with no utility, no team promises and no expectation of profit. It is not a medicine, not a medical device, not medical advice and not financial advice. Nothing on this page is a recommendation to buy anything. Crypto assets are extremely volatile and you can lose 100% of what you put in. Not affiliated with, endorsed by or connected to any pharmaceutical company, pharmacy, health organisation or regulator. Do your own research and never risk money you can't afford to lose.
+  </p>
+  <p class="copyright">© 2026 PUMPFONE · shake well before use</p>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
