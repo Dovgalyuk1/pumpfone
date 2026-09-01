@@ -74,7 +74,7 @@ code,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
 }
 .bottle-label{display:block;background:var(--yellow);border:3px solid var(--ink);border-radius:8px;padding:10px 6px}
 .bl-top{display:block;font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:1px}
-.bl-name{display:block;font-family:"Bungee",sans-serif;font-size:20px;line-height:1.1;margin:3px 0}
+.bl-name{display:block;font-family:"Bungee",sans-serif;font-size:17px;letter-spacing:-.5px;line-height:1.1;margin:3px 0}
 .bl-dose{display:block;font-family:"IBM Plex Mono",monospace;font-size:9px}
 .boot-warn{font-family:"IBM Plex Mono",monospace;color:#e8fff8;letter-spacing:3px;font-size:12px;margin:0 0 14px}
 .boot-btn{
